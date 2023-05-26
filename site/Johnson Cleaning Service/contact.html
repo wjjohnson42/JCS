@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson's Cleaning Service</title>
+  </head>
+    <body class="contact">
+    <!--Nav-Bar-->
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <nav role="navigation">
+      <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+      </ul>
+      </div>
+  </nav>
+  <form name="contact" method="POST" data-netlify="true">
+  <div class="rendered-form">
+    <div class="">
+        <h1 access="false" id="contact-us">Contact Us<br></h1></div>
+    <div class="formbuilder-text form-group field-name">
+        <label for="name" class="formbuilder-text-label">Name:</label>
+        <input type="text" class="form-control" name="name" access="false" maxlength="25" id="name" required="required" aria-required="true">
+    </div>
+    <div class="formbuilder-text form-group field-phone">
+        <label for="phone" class="formbuilder-text-label">Phone Number:</label>
+        <input type="tel" placeholder="(555)-555-5555" class="form-control" name="phone" access="false" id="phone" required="required" aria-required="true">
+    </div>
+    <div class="formbuilder-text form-group field-email">
+        <label for="email" class="formbuilder-text-label">Email:</label>
+        <input type="email" class="form-control" name="email" access="false" id="email">
+    </div>
+    <div class="formbuilder-select form-group field-type">
+        <label for="type" class="formbuilder-select-label">Type of Service
+            <br><span class="formbuilder-required"></span></label>
+        <select class="form-control" name="type" id="type" required="required" aria-required="true">
+            <option value="commercial" selected="true" id="type-0">Commercial</option>
+            <option value="windows" id="type-1">Windows</option>
+            <option value="carpet" id="type-2">Carpet</option>
+            <option value="other" id="type-3">Other</option>
+        </select>
+    </div>
+    <div class="checkbox">
+        <label for="checkbox-group-1685065006570" class="formbuilder-checkbox-group-label">How would you prefer to be contacted?
+            <br>
+        </label>
+        <div class="checkbox-group">
+            <div class="formbuilder-checkbox">
+                <input name="checkbox-group-1685065006570[]" access="false" id="checkbox-group-1685065006570-0" value="email" type="checkbox">
+                <label for="checkbox-group-1685065006570-0">Email</label>
+            </div>
+            <div class="formbuilder-checkbox">
+                <input name="checkbox-group-1685065006570[]" access="false" id="checkbox-group-1685065006570-1" value="phone" type="checkbox">
+                <label for="checkbox-group-1685065006570-1">Phone</label>
+            </div>
+        </div>
+    </div>
+    <div class="formbuilder-textarea form-group field-details">
+        <label for="details" class="formbuilder-textarea-label">Are there any details you would like to add?</label>
+        <textarea type="textarea" class="form-control" name="details" access="false" maxlength="500" id="details"></textarea>
+    </div>
+    <div class="formbuilder-button form-group field-submit">
+        <button type="submit" class="btn-primary btn" name="submit" access="false" style="primary" id="submit">Submit</button>
+    </div>
+    </div>
+</form>
+<footer></footer>
+  </body>
+</html>
