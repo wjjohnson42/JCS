@@ -1,0 +1,726 @@
+@font-face {
+    font-family: "PlusJakartaSans";
+    src: url(PlusJakartaSans.ttf) format("truetype");
+  }
+
+body {
+    background-color: #FFFFFF;
+    overflow-y: scroll;
+}
+
+/*Navbar*/
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style: none;
+
+}
+
+.navbar a {
+    width: 100%;
+    padding: 2rem;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans";
+    color: #000000;
+
+}
+/*HomePage Decor*/
+.home-content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 55vh;
+    margin: 0 auto;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+.jcs-logo {
+    font-weight: 800;
+    font-size: 200px;
+    font-family: "Plus Jakarta Sans";
+    color: #0049DB;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 3px 2px 19px rgba(0, 0, 0, 0.25);
+}
+
+.jcs-logo p{
+    padding: 0;
+    margin: 0;
+}
+
+
+.subheading {
+    text-align: center;
+    font-weight: 800;
+    color: #0049DB;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+}
+
+.subheading p{
+    padding: 0;
+    margin: 0;
+}
+
+.est {
+    text-align: right;
+    margin: 0 3.2em auto auto;
+    padding: 0;
+    line-height: 1;
+}
+
+.est p{
+    margin: auto;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+}
+/*Quote Decor*/
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.quote {
+    font-size: 32px;
+    margin: 0 auto;
+    font-family: 'Plus Jakarta Sans';
+    font-style: italic;
+    font-weight: 500;
+    padding: 0;
+    text-align: left;
+    z-index: 0;
+}
+
+.quote p{
+    padding: 0;
+    margin: 0;
+}
+.brent {
+    text-align: right;
+    font-weight: 400;
+    color: #0049DB;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: italic;
+    z-index: 0;
+}
+
+.brent p {
+    margin: 0;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+/* Ellipse 1 */
+.circle1 {
+    position: absolute;
+    width: 154px;
+    height: 154px;
+    background: rgba(255, 107, 193, 0.7);
+    -webkit-border-radius: 77px;
+    -moz-border-radius: 77px;
+    -ms-border-radius: 77px;
+    -o-border-radius: 77px;
+    border-radius: 77px;
+    z-index: -1;
+    -webkit-transform: translateY(-70%);
+    -moz-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    -o-transform: translateY(-70%);
+    transform: translateY(-70%);
+    opacity: 70%;
+}
+
+.circle2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border-radius: 60px;
+    background: white;
+    border: 10px solid #ff6bc1;
+    -webkit-transform: translate(200%, 50%);
+    -moz-transform: translate(200%, 50%);
+    -ms-transform: translate(200%, 50%);
+    -o-transform: translate(200%, 50%);
+    transform: translate(200%, 20%);
+    opacity: 70%;
+    z-index: -1;
+}
+/*Services Area*/
+.services {
+    text-align: center;
+    color: black;
+    font-size: 24;
+    font-weight: 800;
+    font-family: "Plus Jakarta Sans";
+}
+
+.title-desc {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title-desc h2 {
+    color: #0049DB;
+    font-family: "Plus Jakarta Sans";
+    padding-top: 2em;
+    text-align: left;
+    font-weight: 600;
+}
+
+.service-desc img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.title-desc p{
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    line-height: 25px;
+}
+ /*Banners*/
+.banner {
+    width: 100%;
+    height: auto;
+ }
+
+.estimate {
+    background-color: #0049DB;
+    border:0;
+    padding: 12px 24px;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    border-radius: 7px;
+    color: #f5f5f5;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans";
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39);
+ }
+
+.estimate-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 10rem 0;
+ }
+/*Contact*/
+ /*Form*/
+    .rendered-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Plus Jakarta Sans";
+    width: 80%;
+    margin: 0 auto;
+}
+
+.formbuilder-text-label, .formbuilder-textarea-label, {
+    font-size: 1.125em;
+    display: flex;
+    text-align: left;
+}
+
+input {
+    height: 1.5em;
+    background-color: #e4e4e4;
+    border: 1px #e4e4e4 solid;
+    padding: .3em;
+}
+
+#type {
+    border: 1px #e4e4e4 solid;
+}
+select {
+    padding: .3em;
+    font-size: 1.125em;
+    background-color: #e4e4e4;
+}
+
+#contact-us{
+    color: #0049DB;
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-group {
+    display: inline-block;
+}
+
+.checkbox, .formbuilder-select, .formbuilder-text, .formbuilder-textarea, .formbuilder-button, .formgroup {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.form-control{
+    margin: 0 auto;
+    width: 200px;
+    display: block;
+}
+
+.btn-primary{
+    height:1.5em;
+    width:180px;
+    border:none;
+    background:#2B2D2F;
+    position:relative;
+    border-radius:2px;
+    color:#fff;
+    font-size:1.7em;
+    font-weight:300;
+    font-family: "Plus Jakarta Sans";
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+}
+
+.formbuilder-button {
+    padding: 10px;
+}
+
+.btn-primary:hover{
+    background: #0049DB;
+    cursor: pointer;
+}
+
+.submitted {
+display: flex;
+width: 100vw;
+height: 100vh;
+justify-content: center;
+flex-direction: column;
+margin: 0 auto;
+}
+
+/*About Section*/
+.jcs-logo-about {
+    text-align: center;
+    font-weight: 800;
+    font-size: 100px;
+    font-family: "Plus Jakarta Sans";
+    color: #0049DB;
+    padding: 0;
+    margin: 5% 0 0 0;
+    line-height: 1;
+    text-shadow: 3px 2px 19px rgba(0, 0, 0, 0.25);
+}
+
+.jcs-logo-about p{
+    padding: 0;
+    margin: 0;
+}
+
+.subheading-about {
+    text-align: center;
+    font-weight: 800;
+    color: #0049DB;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+}
+
+.subtitle-about {
+    font-family: "Plus Jakarta Sans";
+    text-align: left;
+    color: black;
+    font-size: 24;
+    font-weight: 800;
+    padding: 2em;
+}
+
+.subtitle-about{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "Plus Jakarta Sans";
+}
+
+.info-about{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.justin {
+    float: right;
+    width: 300px;
+    height: auto;
+    margin: 0 0 0 15px;
+    -webkit-box-shadow: rgba(0,0,0, 0.68) 0px 0px 12px 0px;
+    -moz-box-shadow: rgba(0,0,0, 0.68) 0px 0px 12px 0px;
+    box-shadow: rgba(0,0,0, 0.68) 0px 0px 12px 0px;
+}
+
+.family {
+    float: left;
+    width: 400px;
+    height: auto;
+    margin: 0 15px 0 0;
+    -webkit-box-shadow: rgba(0,0,0, 0.5) 0px 0px 12px 0px;
+    -moz-box-shadow: rgba(0,0,0, 0.5) 0px 0px 12px 0px;
+    box-shadow: rgba(0,0,0, 0.5) 0px 0px 12px 0px;
+}
+
+/*hamburger*/
+#menuToggle {
+    display: none;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  
+    z-index: 1;
+  
+    -webkit-user-select: none;
+    user-select: none;
+    position: fixed;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #0049DB;
+  font-family: "Plus Jakarta Sans";
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: black;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 100vw;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #232323;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /*tostopflickeringoftextinsafari*/transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  -webkit-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  -moz-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  -ms-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 26px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/*MOBILE DEVICES*/
+@media (max-width: 768px) {
+
+    body {
+        overflow-y:auto;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: normal;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .jcs-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .jcs-logo{
+        font-size: 100px;
+    }
+
+    .quote {
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 22px;
+    }
+    .quote-container br {
+        display: none;
+        padding: 2rem 0;
+        margin-top: 0;
+    }
+
+    .circle1,.circle2 {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    /*About Section*/
+
+    .info-about{
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: "Plus Jakarta Sans";
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .justin {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .family-image {
+        display: flex;
+        justify-content: center;
+        float: none;
+    }
+
+    .family {
+        width: 95%;
+    }
+
+    /*Contact Form*/
+    fieldset {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid white;
+        padding: 2em;
+        width: 100vw;
+        margin: 0 auto;
+        background-color: #f4f7f8;
+    }
+
+    .contact {
+        background-color: white;
+    }
+/*Hamburger*/
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 50px;
+        left: 50px;
+      
+        z-index: 1;
+      
+        -webkit-user-select: none;
+        user-select: none;
+        position: absolute;
+    }
+    
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: #0049DB;
+      font-family: "Plus Jakarta Sans";
+      
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      
+      cursor: pointer;
+      
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+      
+      -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: black;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu
+    {
+      position: absolute;
+      width: 100vw;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /*tostopflickeringoftextinsafari*/transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      -webkit-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      -moz-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      -ms-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+      background-color: white;
+    }
+    
+    #menu li
+    {
+      padding: 10px 0;
+      font-size: 26px;
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+}
